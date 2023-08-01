@@ -6,7 +6,7 @@ function ViewRequests() {
   const userId = "saumyab"; // Replace this with the actual userId you want to send
 
   useEffect(() => {
-    fetch('${process.env.REACT_APP_API_ENDPOINT}/viewrequests', {
+    fetch('https://jbjmc1ph3k.execute-api.us-east-1.amazonaws.com/prod/viewrequests', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ const handleAcceptClick = (request) => {
   };
 
   // Make a POST request to your backend API
-  fetch('${process.env.REACT_APP_API_ENDPOINT}/handlerequests', {
+  fetch('https://jbjmc1ph3k.execute-api.us-east-1.amazonaws.com/prod/handlerequests', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ const handleRejectClick = (request) => {
   };
 
   // Make a POST request to your backend API
-  fetch('${process.env.REACT_APP_API_ENDPOINT}/handlerequests', {
+  fetch('https://jbjmc1ph3k.execute-api.us-east-1.amazonaws.com/prod/handlerequests', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
