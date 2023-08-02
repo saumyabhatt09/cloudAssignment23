@@ -6,7 +6,7 @@ function ViewRequests() {
   const userId = "saumyab"; // Replace this with the actual userId you want to send
 
   useEffect(() => {
-    fetch('https://60t2s8hw8j.execute-api.us-east-1.amazonaws.com/prod/viewrequests', {
+    fetch('https://37go0l0zf8.execute-api.us-east-1.amazonaws.com/bookbridge/viewrequests', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
