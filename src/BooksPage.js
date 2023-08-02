@@ -29,7 +29,7 @@ const BooksPage = () => {
       userId: books.find((book) => book.bookId === bookId).userId,
     };
 
-    fetch('https://60t2s8hw8j.execute-api.us-east-1.amazonaws.com/prod/placequeue', {
+    fetch('https://37go0l0zf8.execute-api.us-east-1.amazonaws.com/bookbridge/placequeue', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ const BooksPage = () => {
      type: 'Lease', // You can customize this based on your use case
    };
 
-   fetch('https://60t2s8hw8j.execute-api.us-east-1.amazonaws.com/prod/placequeue', {
+   fetch('https://37go0l0zf8.execute-api.us-east-1.amazonaws.com/bookbridge/placequeue', {
      method: 'POST',
      headers: {
        'Content-Type': 'application/json',
