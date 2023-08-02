@@ -4,7 +4,7 @@ const BooksPage = () => {
   const [books, setBooks] = useState([]);
   console.log('https://jbjmc1ph3k.execute-api.us-east-1.amazonaws.com/prod/viewbooks');
   useEffect(() => {
-    fetch('https://60t2s8hw8j.execute-api.us-east-1.amazonaws.com/prod/viewbooks', {
+    fetch('https://37go0l0zf8.execute-api.us-east-1.amazonaws.com/bookbridge/viewbooks', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
