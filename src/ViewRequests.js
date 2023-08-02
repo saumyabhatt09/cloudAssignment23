@@ -15,8 +15,9 @@ function ViewRequests() {
     })
       .then((response) => response.json())
       .then((data) => {
+        const parsedData = JSON.parse(data.body);
         console.log(data);
-        setRequests(data);
+        setRequests(parsedData);
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
