@@ -14,7 +14,7 @@ const BooksPage = () => {
           .then((data) => {
             const parsedData = JSON.parse(data.body);
             console.log(parsedData);
-            setRequests(parsedData);
+            setBooks(parsedData);
           })
       .catch((error) => {
         console.error('Error fetching data:', error);
