@@ -4,7 +4,7 @@ const BooksPage = () => {
   const [books, setBooks] = useState([]);
   console.log('https://jbjmc1ph3k.execute-api.us-east-1.amazonaws.com/prod/viewbooks');
   useEffect(() => {
-    fetch('${process.env.REACT_APP_API_ENDPOINT}/viewbooks', {
+    fetch('https://60t2s8hw8j.execute-api.us-east-1.amazonaws.com/prod/viewbooks', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ const BooksPage = () => {
       userId: books.find((book) => book.bookId === bookId).userId,
     };
 
-    fetch('https://jbjmc1ph3k.execute-api.us-east-1.amazonaws.com/prod/placequeue', {
+    fetch('https://60t2s8hw8j.execute-api.us-east-1.amazonaws.com/prod/placequeue', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ const BooksPage = () => {
      type: 'Lease', // You can customize this based on your use case
    };
 
-   fetch('https://jbjmc1ph3k.execute-api.us-east-1.amazonaws.com/prod/placequeue', {
+   fetch('https://60t2s8hw8j.execute-api.us-east-1.amazonaws.com/prod/placequeue', {
      method: 'POST',
      headers: {
        'Content-Type': 'application/json',
