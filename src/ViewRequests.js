@@ -41,7 +41,7 @@ const handleAcceptClick = (request) => {
   };
 
   // Make a POST request to your backend API
-  fetch('https://60t2s8hw8j.execute-api.us-east-1.amazonaws.com/prod/handlerequests', {
+  fetch('https://37go0l0zf8.execute-api.us-east-1.amazonaws.com/bookbridge/requesthandler', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ const handleRejectClick = (request) => {
   };
 
   // Make a POST request to your backend API
-  fetch('https://60t2s8hw8j.execute-api.us-east-1.amazonaws.com/prod/handlerequests', {
+  fetch('https://37go0l0zf8.execute-api.us-east-1.amazonaws.com/bookbridge/requesthandler', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
