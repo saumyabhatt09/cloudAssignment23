@@ -10,11 +10,12 @@ const BooksPage = () => {
         'Content-Type': 'application/json',
       },
     })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setBooks(data);
-      })
+            .then((response) => response.json())
+          .then((data) => {
+            const parsedData = JSON.parse(data.body);
+            console.log(parsedData);
+            setRequests(parsedData);
+          })
       .catch((error) => {
         console.error('Error fetching data:', error);
       });
